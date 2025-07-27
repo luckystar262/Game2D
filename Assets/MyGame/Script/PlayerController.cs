@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] private float moveSpeed = 5.0f;
+    [SerializeField] private float jumfore = 10.0f;
+    [SerializeField] Transform groundCheck;
+    public LayerMask groundLayer;
+
     void Start()
     {
         
